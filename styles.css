@@ -1,0 +1,166 @@
+html, body {
+    height: auto;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to top, #090909, #131313);
+    
+}
+
+.logo-container {
+    height: 200px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+.logo-container img {
+    max-height: 100%;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-item{
+    margin: 0 15px;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.navbar-color{
+    background-color: white;
+}
+
+
+.hero {
+    height: 600px; /* Wysokość nagłówka */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    background-image: url("example.jpg");
+    background-repeat: no-repeat;
+    background-origin:inherit;
+    background-size: cover;
+    resize: both;
+    backdrop-filter: blur(10px); /* Rozmazanie tła dla lepszego efektu */
+    padding: 50px;
+    border-top: 5px ridge rgba(255, 255, 255, 0.3);
+    border-bottom: 5px ridge rgba(255, 255, 255, 0.3);
+    border-radius: 1%;
+}
+
+.hero h1{
+    font-size: 5rem;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'wotham-font';
+    src: url(Wotham.ttf);
+}
+.hero h2{
+    font-size: 3rem;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'wotham-font';
+    src: url(Wotham.ttf);
+}
+
+.hero p{
+    font-size: 1.5rem;
+    -webkit-text-stroke-width: 0.015rem;
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.sections{
+    color: white;
+    padding: 50px 0;
+}
+/*nagłówek*/
+.sections h1{
+    font-size: 5rem;
+    margin-bottom: 25px;
+}
+/*pod nagłówkiem*/
+.sections h2 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+}
+
+/*plain text*/
+.sections p{
+    font-size: 1.5px;
+    margin-bottom: 50px;
+    font-size: 1.25rem;
+    text-shadow: 1px 1px 1px rbga(0, 0, 0, 0.5);
+}
+
+/* Ustawienia ogólne */
+.uslugi-accordion {
+    margin-top: 20px;
+}
+
+.accordion-header {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.accordion-content {
+    padding: 15px;
+    background-color: #f1f1f1;
+    display: none; /* Ukrywanie treści zakładki domyślnie */
+    font-size: 16px;
+}
+
+.accordion-content.show {
+    display: block; /* Pokazywanie treści po kliknięciu */
+    animation: slideDown 0.5s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+    to {
+        max-height: 1000px;
+        opacity: 1;
+    }
+}

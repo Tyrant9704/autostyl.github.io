@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detailing Samochodowy</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo" width="200" height="auto">
+    </div>
+<!-- Nawigacja -->
+<nav class="navbar navbar-expand-lg" style=" background-color:rgba(255, 255, 255, 0.171)">
+    <div class="container-fluid d-flex justify-content-end">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="#o-nas">O nas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#uslugi">Usługi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Sekcja Hero (przeniesiona poniżej nawigacji) -->
+    <header class="hero">
+        <div class="container">
+            <h1>AutoStyl Będzin</h1>
+            <h2>Twoje auto zasługuje na najlepszą pielęgnację</h2>
+            <p>Zadbaj o swój samochód z profesjonalnym detailingiem. Nasz zespół młodych specjalistów zaoferuje kompleksowe usługi czyszczenia, renowacji oraz ochrony pojazdów na najwyższym poziomie.</p>
+        </div>
+    </header>
+
+    <!-- Sekcja "O nas" -->
+    <section id="o-nas" class="sections">
+        <div class="container text-center">
+            <h1>O nas</h1>
+            <h2>15 lat doświadczenia - perfekcja w każdym detalu</h2>
+            <p>AutoStyl to więcej niż zwykła myjnia. To miejsce, gdzie od 15 lat dbamy o samochody naszych klientów, dostarczając usług na najwyższym poziomie. Niezależnie od tego, czy potrzebujesz szybkiego mycia, odświeżenia lakieru, pełnej korekty czy aplikacji powłoki ceramicznej, zapewniamy jakość, która robi róznicę </p>
+            <h2>Indywidualne podejście- bo każdy samochód i właściciel są wyjątkowi</h2>
+            <p>W Autostyl wierzymy, że każdy samochód zasługuje na wyjątkową opiekę. Bez względu na to, czy przyjeżdzasz w formalnym bądź casualowym wydaniu- traktujemy każdy pojazd z najwyższą troską, dostosowując nasze usługi do indywidualnych potrzeb. Dzięki temu możesz mieć pewność, że Twój samochód otrzyma dokładnie to, czego potrzebuje.</p>
+        </div>
+    </section>
+
+
+<section id="uslugi" class="sections">
+    <div class="container text-center">
+        <h2>Nasze Usługi</h2>
+        <div class="uslugi-accordion">
+            <!-- Zakładka 1 -->
+            <button class="accordion-header" onclick="toggleAccordion('section1')">Zakładka 1</button>
+            <div id="section1" class="accordion-content">
+                <p>Treść zakładki 1</p>
+            </div>
+            
+            <!-- Zakładka 2 -->
+            <button class="accordion-header" onclick="toggleAccordion('section2')">Zakładka 2</button>
+            <div id="section2" class="accordion-content">
+                <p>Treść zakładki 2</p>
+            </div>
+            
+            <!-- Zakładka 3 -->
+            <button class="accordion-header" onclick="toggleAccordion('section3')">Zakładka 3</button>
+            <div id="section3" class="accordion-content">
+                <p>Treść zakładki 3</p>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+
+
+    <!-- Sekcja "Kontakt" -->
+    <section id="kontakt" class="sections">
+        <div class="container text-center">
+            <h2>Kontakt</h2>
+            <p>Skontaktuj się z nami, aby umówić swoje auto na detailing!</p>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="acordeon.js"></script>
+
+</body>
+</html>
