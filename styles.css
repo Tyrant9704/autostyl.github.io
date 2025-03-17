@@ -4,7 +4,10 @@ html, body {
 }
 
 body {
-    background: linear-gradient(to top, #090909, #131313);
+    background: linear-gradient(45deg,
+    #2980b9,
+    #2c3e50)
+     ;
     
 }
 
@@ -109,6 +112,8 @@ nav {
 .sections h1{
     font-size: 5rem;
     margin-bottom: 25px;
+    text-align: center;
+    align-items: center;
 }
 /*pod nagłówkiem*/
 .sections h2 {
@@ -132,7 +137,8 @@ nav {
 
 .accordion-header {
     padding: 15px;
-    background-color: #007bff;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
     color: white;
     text-align: left;
     cursor: pointer;
@@ -164,3 +170,31 @@ nav {
         opacity: 1;
     }
 }
+
+.info-container {
+    position: relative;
+    padding: 10px;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 50px 50px 0 0; /* Zaokrąglone tylko górne rogi */
+    overflow: hidden;
+}
+
+/* Pseudo-element dla gradientowego obramowania */
+.info-container::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    height: 100%; /* Wysokość gradientu */
+    background: linear-gradient(
+        to bottom,
+        rgba(14, 128, 185, 1) 0%,
+        rgba(44, 62, 80, 0.5) 60%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    border-radius: 60px 60px 0 0; /* Zaokrąglone rogi */
+    z-index: -1;
+}
+
