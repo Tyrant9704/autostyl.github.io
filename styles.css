@@ -148,11 +148,29 @@ nav {
     font-weight: bold;
 }
 
+.accordion-image {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    overflow: hidden;
+    backdrop-filter: blur(50px);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
 .accordion-content {
-    padding: 15px;
-    background-color: #f1f1f1;
     display: none; /* Ukrywanie treści zakładki domyślnie */
     font-size: 16px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.accordion-content p {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .accordion-content.show {
@@ -174,8 +192,10 @@ nav {
 .info-container {
     position: relative;
     padding: 10px;
-    margin: 30px auto;
-    max-width: 900px;
+    margin: 20px auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: auto;
     border-radius: 50px 50px 0 0; /* Zaokrąglone tylko górne rogi */
     overflow: hidden;
 }
